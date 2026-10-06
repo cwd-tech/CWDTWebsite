@@ -2,7 +2,7 @@
 
 - 狀態：待使用者審閱
 - 日期：2026-10-06
-- 專案位置：`D:\Work\Develop\CWDT\CompanyWebsite`
+- 專案位置：`D:\Work\Develop\CWDT\CWDTWebsite`
 
 ## 目標
 

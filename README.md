@@ -1,4 +1,4 @@
-# CWDT 澄叡數位科技官網
+# CWDTWebsite｜澄叡數位科技官網
 
 澄叡數位科技股份有限公司的單頁形象網站，使用 React、TypeScript 與 Vite，支援桌面與手機瀏覽，並透過 GitHub Actions 部署至 GitHub Pages。
 

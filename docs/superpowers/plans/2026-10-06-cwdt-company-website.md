@@ -58,7 +58,7 @@
 
 - [x] **Step 1: Scaffold in the already initialized project directory.**
 
-Run from `D:\Work\Develop\CWDT\CompanyWebsite`:
+Run from `D:\Work\Develop\CWDT\CWDTWebsite`:
 
 ```powershell
 npm create vite@latest . -- --template react-ts
