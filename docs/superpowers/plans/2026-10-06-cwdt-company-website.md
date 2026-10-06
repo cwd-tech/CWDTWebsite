@@ -56,7 +56,7 @@
 - Produces the runnable Vite root and the `npm run dev`, `npm run build`, and `npm run preview` scripts used by later tasks.
 - `vite.config.ts` exports a Vite config with the React plugin and `base: './'`.
 
-- [ ] **Step 1: Scaffold in the already initialized project directory.**
+- [x] **Step 1: Scaffold in the already initialized project directory.**
 
 Run from `D:\Work\Develop\CWDT\CompanyWebsite`:
 
@@ -66,7 +66,7 @@ npm create vite@latest . -- --template react-ts
 
 If create-vite asks how to handle the existing non-empty directory, choose **Ignore files and continue** so the already committed `docs/` and `.git/` remain in place. Keep the generated React TypeScript template; do not add a UI framework or router.
 
-- [ ] **Step 2: Install dependencies and set the relative build base.**
+- [x] **Step 2: Install dependencies and set the relative build base.**
 
 Run:
 
@@ -82,15 +82,15 @@ base: './',
 
 This single-page site has no nested client routes, so relative asset URLs support both a GitHub Pages repository path and a custom-domain root.
 
-- [ ] **Step 3: Set the document language and initial metadata.**
+- [x] **Step 3: Set the document language and initial metadata.**
 
 In `index.html`, set `<html lang="zh-Hant">`, title `CWDT 澄叡｜公司官網`, and a description that explicitly says `公司介紹文案待提供。` Do not insert invented business claims or third-party media links.
 
-- [ ] **Step 4: Write local start and build instructions.**
+- [x] **Step 4: Write local start and build instructions.**
 
 In `README.md`, document the Node requirement (`20.19+` or `22.12+`) and the exact commands `npm install`, `npm run dev`, `npm run build`, and `npm run preview`.
 
-- [ ] **Step 5: Build the untouched scaffold and commit.**
+- [x] **Step 5: Build the untouched scaffold and commit.**
 
 Run:
 
