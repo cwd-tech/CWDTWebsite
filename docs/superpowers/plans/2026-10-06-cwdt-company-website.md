@@ -164,7 +164,7 @@ export interface SiteContent {
 }
 ```
 
-`siteContent` has `brand`, `navigation`, `hero`, `about`, `services`, `cases`, and `contact` fields. `services` contains three editable card objects; `cases` contains two editable card objects. Every description is the literal replacement-ready copy `正式內容待提供。`; each card title is `服務項目待提供` or `合作案例待提供` as appropriate. Contact details start with labels and `聯絡方式待提供`, with no `href` until a real company value is supplied.
+`siteContent` has `brand`, `navigation`, `hero`, `about`, `services`, `cases`, and `contact` fields. `services` contains three editable card objects; `cases` contains two editable card objects. Service and case card descriptions are the literal replacement-ready copy `正式內容待提供。`; their titles are `服務項目待提供` or `合作案例待提供` as appropriate. Contact details start with labels and `聯絡方式待提供`, with no `href` until a real company value is supplied.
 
 - [ ] **Step 1: Define the content types and actual neutral site data.**
 
@@ -247,7 +247,7 @@ npm run build
 Expected: TypeScript accepts all section props and the static build succeeds. Commit:
 
 ```powershell
-git add -A -- src index.html
+git add -A -- src public index.html
 git commit -m "feat: add CWDT website sections"
 ```
 
