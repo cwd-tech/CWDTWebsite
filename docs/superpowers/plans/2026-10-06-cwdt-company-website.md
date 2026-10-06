@@ -166,11 +166,11 @@ export interface SiteContent {
 
 `siteContent` has `brand`, `navigation`, `hero`, `about`, `services`, `cases`, and `contact` fields. `services` contains three editable card objects; `cases` contains two editable card objects. Service and case card descriptions are the literal replacement-ready copy `正式內容待提供。`; their titles are `服務項目待提供` or `合作案例待提供` as appropriate. Contact details start with labels and `聯絡方式待提供`, with no `href` until a real company value is supplied.
 
-- [ ] **Step 1: Define the content types and actual neutral site data.**
+- [x] **Step 1: Define the content types and actual neutral site data.**
 
 Create `siteContent.ts` using the interfaces above. Include navigation anchors `about`, `services`, `cases`, `contact`; use brand text `CWDT` and `澄叡`; set the hero title to `品牌主標題待提供`, its description to `首頁介紹文案待提供。`, CTA label to `探索服務`, target to `#services`, and visual label to `主視覺影像待提供`. Use About title `關於澄叡`, eyebrow `ABOUT CWDT`, description `公司介紹文案待提供。`, and visual label `公司介紹圖片待提供`. Use Services title `服務項目`, eyebrow `WHAT WE DO`, description `服務介紹文案待提供。`, and visual label `服務主視覺待提供`; add three cards whose title is `服務項目待提供`, eyebrow is `SERVICE 01`, `SERVICE 02`, or `SERVICE 03`, description is `正式內容待提供。`, and visual label is `服務圖片待提供`. Use Cases title `合作案例`, eyebrow `SELECTED WORK`, and add two cards titled `合作案例待提供`, with eyebrow `CASE 01` or `CASE 02`, description `正式內容待提供。`, and visual label `案例圖片待提供`. Use Contact title `聯絡資訊`, eyebrow `CONTACT`, and one detail with label `聯絡方式` and value `聯絡方式待提供。`; omit `href`. Keep all strings in this file so future copy changes do not require editing layout components.
 
-- [ ] **Step 2: Implement the shared visual placeholder.**
+- [x] **Step 2: Implement the shared visual placeholder.**
 
 `MediaPlaceholder.tsx` accepts `label: string` and `variant: 'hero' | 'story' | 'card'`, renders a decorative `<div>` with a child label, and sets decorative shape layers to `aria-hidden="true"`. Use no external image URL.
 
@@ -192,7 +192,7 @@ export function MediaPlaceholder({ label, variant }: MediaPlaceholderProps) {
 }
 ```
 
-- [ ] **Step 3: Implement the independent section components.**
+- [x] **Step 3: Implement the independent section components.**
 
 Create one component per file from the File Map. Each component accepts only the corresponding typed section data as props. Use `<header>`, `<nav>`, `<main>`, `<section>`, `<address>` and `<footer>` where appropriate. Give the sections the IDs from `siteContent.navigation`. The CTA uses a real in-page `href`, not a click handler.
 
@@ -210,7 +210,7 @@ The contact detail rendering must follow this branch:
 )}
 ```
 
-- [ ] **Step 4: Compose the one-page layout.**
+- [x] **Step 4: Compose the one-page layout.**
 
 Replace the Vite starter content in `App.tsx` with `SiteHeader`, `HeroSection`, `<main>` sections in this order—About, Services, Cases, Contact—and `SiteFooter`, all backed by `siteContent`. Give `SiteHeader` the ID `top`; link the wordmark to `#top`. Preserve a single `<h1>` in the hero and ordered section heading levels. Add this keyboard-only skip link before the header: `<a className="skip-link" href="#main-content">跳至主要內容</a>`. Remove the starter app's `App.css` and all imports/references to Vite/React logos; remove those unused logo files from the project.
 
@@ -236,7 +236,7 @@ export default function App() {
 }
 ```
 
-- [ ] **Step 5: Build and commit the content/layout deliverable.**
+- [x] **Step 5: Build and commit the content/layout deliverable.**
 
 Run:
 
