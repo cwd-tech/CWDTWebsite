@@ -111,7 +111,7 @@ git commit -m "chore: scaffold CWDT company website"
 - Create: `src/content/siteContent.ts`.
 - Create: `src/components/SiteHeader.tsx`, `HeroSection.tsx`, `AboutSection.tsx`, `ServicesSection.tsx`, `CasesSection.tsx`, `ContactSection.tsx`, `MediaPlaceholder.tsx`, `SiteFooter.tsx`.
 - Modify: `src/App.tsx`, `index.html`.
-- Delete unused Vite starter files: `src/App.css`, `src/assets/react.svg`, `public/vite.svg`.
+- Delete unused Vite starter files: `src/App.css`, `src/assets/hero.png`, `src/assets/react.svg`, `src/assets/vite.svg`, `public/favicon.svg`, `public/icons.svg`.
 
 **Interfaces:**
 
