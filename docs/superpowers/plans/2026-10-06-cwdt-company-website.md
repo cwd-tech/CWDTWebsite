@@ -374,7 +374,7 @@ git commit -m "feat: style responsive CWDT landing page"
 - Workflow builds the repository root with `npm ci` and `npm run build`, then publishes only `dist/`.
 - Workflow uses `contents: read`, `pages: write`, and `id-token: write` permissions; no secrets or DNS credentials are required for static deployment.
 
-- [ ] **Step 1: Add the official GitHub Pages Actions workflow shape.**
+- [x] **Step 1: Add the official GitHub Pages Actions workflow shape.**
 
 Create `.github/workflows/deploy-pages.yml` with this complete workflow, using the action SHAs from Vite's current official static deployment example:
 
@@ -424,11 +424,11 @@ jobs:
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
 ```
 
-- [ ] **Step 2: Document GitHub Pages settings without inventing a domain.**
+- [x] **Step 2: Document GitHub Pages settings without inventing a domain.**
 
 Update `README.md` to explain that the repository owner selects **Settings → Pages → Build and deployment → GitHub Actions** after pushing to GitHub. Explain that a custom domain is configured in Pages and at the DNS provider after the official domain is known; do not add a `CNAME` file, DNS record, owner name, repository URL or credential before those values exist.
 
-- [ ] **Step 3: Build and commit deployment configuration.**
+- [x] **Step 3: Build and commit deployment configuration.**
 
 Run `npm run build`; expected: `dist/` exists and is the artifact path used by the workflow. Commit:
 
