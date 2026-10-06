@@ -25,7 +25,7 @@ export function SiteHeader({ brand, navigation }: SiteHeaderProps) {
           type="button"
           aria-expanded={isMenuOpen}
           aria-controls="primary-navigation"
-          aria-label={isMenuOpen ? '關閉選單' : '開啟選單'}
+          aria-label={isMenuOpen ? '關閉導覽' : '開啟導覽'}
           onClick={() => setIsMenuOpen((open) => !open)}
         >
           <span aria-hidden="true" />

@@ -263,7 +263,7 @@ git commit -m "feat: add CWDT website sections"
 - `site.css` owns page layout and component classes; components use stable class names rather than inline styles.
 - `SiteHeader` exposes an accessible menu toggle on narrow screens, with `aria-expanded` and `aria-controls`.
 
-- [ ] **Step 1: Define original CWDT tokens.**
+- [x] **Step 1: Define original CWDT tokens.**
 
 Add CSS variables for deep navy, blue, teal, mint, white, neutral surfaces, body text, muted text, focus outline, content max-width, spacing and radii. Use system Traditional Chinese font fallbacks (`Noto Sans TC`, `PingFang TC`, `Microsoft JhengHei`, sans-serif); do not load a remote font.
 
@@ -286,15 +286,15 @@ Start `tokens.css` with these values:
 }
 ```
 
-- [ ] **Step 2: Build the full-bleed hero and navigation treatment.**
+- [x] **Step 2: Build the full-bleed hero and navigation treatment.**
 
 Use a compact white header with a text wordmark and quiet navigation. Style the hero as a tall, dark, cinematic block with original CSS gradients and subtle geometric lines, high-contrast centered title, short subtitle and rounded light CTA. Keep the placeholder label visible so the absence of official photography is clear.
 
-- [ ] **Step 3: Style story, services, cases, contact and footer.**
+- [x] **Step 3: Style story, services, cases, contact and footer.**
 
 Alternate light content sections with a small number of dark bands. Use large media placeholders paired with generous text blocks; service and case cards use consistent aspect ratios, restrained borders, and short labels. Contact displays information blocks only. Match the section rhythm and image emphasis of the reference without copying its exact compositions or assets.
 
-- [ ] **Step 4: Add responsive layout and mobile menu behavior.**
+- [x] **Step 4: Add responsive layout and mobile menu behavior.**
 
 At widths below `800px`, collapse the main navigation behind a native button with an accessible name (`aria-label="開啟導覽"` / `aria-label="關閉導覽"`). On activation, update `aria-expanded`; selecting a link closes the menu. Use a two-column layout for story sections and card grids above the breakpoint, and a single-column stack below it. Add `scroll-margin-top` so sticky-header anchor destinations remain visible.
 
@@ -350,11 +350,11 @@ Use the `is-open` class consistently for the expanded navigation, with this resp
 }
 ```
 
-- [ ] **Step 5: Add accessibility and reduced-motion styling.**
+- [x] **Step 5: Add accessibility and reduced-motion styling.**
 
 Provide `:focus-visible` rings, sufficient text/background contrast, touch-sized menu controls, decorative placeholders marked as hidden from assistive technology, and a `prefers-reduced-motion: reduce` rule that removes nonessential transitions. Style `.skip-link` off-screen by default and bring it into view on `:focus`. Remove the Vite starter `index.css`; import `tokens.css` before `site.css` from `src/main.tsx`.
 
-- [ ] **Step 6: Build and commit the visual system.**
+- [x] **Step 6: Build and commit the visual system.**
 
 Run `npm run build`; expected: TypeScript and Vite build succeed without external assets. Commit:
 
