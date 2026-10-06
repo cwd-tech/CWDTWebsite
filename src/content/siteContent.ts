@@ -107,8 +107,7 @@ export const siteContent: SiteContent = {
     eyebrow: 'CONTACT',
     title: '攜手打造\n您的智慧工廠',
     details: [
-      { id: 'contact-person', label: '聯絡人', value: '廖益昌｜Nash Liao' },
-      { id: 'email', label: 'Email', value: 'nash.liao@cwd-tech.com', href: 'mailto:nash.liao@cwd-tech.com' },
+      { id: 'email', label: 'Email', value: 'service@cwd-tech.com', href: 'mailto:service@cwd-tech.com' },
       { id: 'phone', label: '電話', value: '0912-331-778', href: 'tel:+886912331778' },
     ],
   },
