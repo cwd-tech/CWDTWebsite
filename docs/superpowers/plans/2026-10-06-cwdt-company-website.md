@@ -442,11 +442,11 @@ git commit -m "ci: deploy CWDT website to GitHub Pages"
 **Files:**
 - No new test suite. Review the files created in Tasks 1–4 and inspect the built result locally.
 
-- [ ] **Step 1: Perform the spec coverage review.**
+- [x] **Step 1: Perform the spec coverage review.**
 
 Confirm the page contains the approved section order, all unknown facts remain neutral placeholders, there is no contact form or backend dependency, and no Expetech/Jinteik assets or copy were added.
 
-- [ ] **Step 2: Review the production build in a local browser.**
+- [x] **Step 2: Review the production build in a local browser.**
 
 Run:
 
@@ -457,7 +457,7 @@ npm run preview -- --host 127.0.0.1
 
 Open the printed local URL. Inspect one desktop-width and one mobile-width viewport. Confirm the sticky header, mobile menu keyboard operation, anchor targets, text wrapping, media-placeholder layout, and contact information remain readable without horizontal overflow. Stop the preview server after inspection.
 
-- [ ] **Step 3: Confirm final repository state.**
+- [x] **Step 3: Confirm final repository state.**
 
 Run `git status --short` and ensure only intentional project files are present. Report the build result, preview review, Pages workflow presence, and remaining user inputs needed before public launch: official copy/assets/contact details, GitHub remote/repository, and custom domain/DNS provider.
 
