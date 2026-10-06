@@ -1,5 +1,5 @@
 import { AboutSection } from './components/AboutSection';
-import { CasesSection } from './components/CasesSection';
+import { RoadmapSection } from './components/RoadmapSection';
 import { ContactSection } from './components/ContactSection';
 import { HeroSection } from './components/HeroSection';
 import { ServicesSection } from './components/ServicesSection';
@@ -18,7 +18,7 @@ export default function App() {
         <HeroSection content={siteContent.hero} />
         <AboutSection content={siteContent.about} />
         <ServicesSection content={siteContent.services} />
-        <CasesSection content={siteContent.cases} />
+        <RoadmapSection content={siteContent.roadmap} />
         <ContactSection content={siteContent.contact} />
       </main>
       <SiteFooter brand={brand} navigation={navigation} />

@@ -12,6 +12,6 @@
   --header-height: 76px;
   --radius-card: 8px;
   --radius-pill: 999px;
-  --space-section: clamp(5rem, 10vw, 9rem);
+  --space-section: clamp(2.5rem, 4vw, 4rem);
   --font-sans: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
 }

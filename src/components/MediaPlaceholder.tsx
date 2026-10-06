@@ -1,6 +1,6 @@
 interface MediaPlaceholderProps {
   label: string;
-  variant: 'hero' | 'story' | 'card';
+  variant: 'hero' | 'story';
 }
 
 export function MediaPlaceholder({ label, variant }: MediaPlaceholderProps) {

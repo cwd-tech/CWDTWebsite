@@ -1,5 +1,4 @@
 import type { ContentCard, SiteContent } from '../content/siteContent';
-import { MediaPlaceholder } from './MediaPlaceholder';
 
 interface ServicesSectionProps {
   content: SiteContent['services'];
@@ -8,13 +7,14 @@ interface ServicesSectionProps {
 function ServiceCard({ item }: { item: ContentCard }) {
   return (
     <article className="service-card">
-      <MediaPlaceholder label={item.visualLabel} variant="card" />
+      <div className="solution-visual">
+        <img src={item.imageSrc} alt={item.imageAlt} width="240" height="140" loading="lazy" />
+      </div>
       <div className="service-card__copy">
         <p className="eyebrow">{item.eyebrow}</p>
         <h3>{item.title}</h3>
         <p>{item.description}</p>
       </div>
-      <span className="service-card__arrow" aria-hidden="true">↗</span>
     </article>
   );
 }
@@ -30,7 +30,12 @@ export function ServicesSection({ content }: ServicesSectionProps) {
           </div>
           <p className="section-heading__description">{content.description}</p>
         </div>
-        <MediaPlaceholder label={content.visualLabel} variant="story" />
+        <div className="solutions-overview">
+          <picture>
+            <source media="(max-width: 600px)" srcSet={content.imageMobileSrc} width="1536" height="1024" />
+            <img src={content.imageSrc} alt={content.imageAlt} width="2172" height="724" loading="lazy" />
+          </picture>
+        </div>
         <div className="service-grid">
           {content.items.map((item) => <ServiceCard key={item.id} item={item} />)}
         </div>

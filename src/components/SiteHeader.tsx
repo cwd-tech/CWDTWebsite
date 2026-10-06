@@ -13,7 +13,7 @@ export function SiteHeader({ brand, navigation }: SiteHeaderProps) {
     <header className="site-header" id="top">
       <div className="site-header__inner">
         <a className="brand" href="#top" aria-label={`${brand.english} ${brand.chinese}，回到首頁`}>
-          <span className="brand__mark" aria-hidden="true">C</span>
+          <img className="brand__mark" src={brand.logoSrc} alt="" width="48" height="48" />
           <span className="brand__text">
             <span className="brand__english">{brand.english}</span>
             <span className="brand__chinese">{brand.chinese}</span>
